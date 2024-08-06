@@ -1,0 +1,18 @@
+#extend("layout"):
+    #export("header"):
+        #extend("header")
+    #endexport
+    #export("content"):
+        <h1>#(title)</h1>
+        <p>Developed curriculum management web application using Angular to collect
+        assignments, outcomes, and materials for over 1600 courses and almost 200 programs to
+        be easily searchable, generate reports, and generate lesson plans automatically for export
+        into Word or PDF. Developed the front end work, using SCSS, CSS Grid, Flexbox, Angular,
+        and Material Design. Ensuring the application was mobile friendly. Set up a development
+        server using Ubuntu for QA testing, before pushing to our production server on AWS.</p>
+    #endexport
+    #export("footer"):
+        #extend("footer")
+    #endexport
+#endextend
+

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>#(title)</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    #import("header")
+    <main class="main-content">
+        #import("content")
+    </main>
+    #import("footer")
+</body>
+</html>

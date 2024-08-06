@@ -1,0 +1,151 @@
+:root {
+    --mainBackground: #333333;
+    --siteTxt: #EBFFFF;
+    --siteTxtHover: #ABABAB;
+    --mainNavLink: yellow;
+}
+
+
+body {
+    background-color: var(--mainBackground);
+    color: var(--siteTxt);
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+/*Navigation*/
+.navBar {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navBar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navBar ul li {
+    display: flex;
+}
+
+.nav-link {
+  border: 2px solid currentColor;
+  border-radius: 3rem;
+  color: var(--mainNavLink);
+  font-size: 1rem;
+  font-weight: 100;
+  overflow: hidden;
+  padding: 1rem 2rem;
+  position: relative;
+  text-decoration: none;
+  transition: .2s transform ease-in-out;
+  will-change: transform;
+  z-index: 0;
+}
+  
+.nav-link::after {
+  background-color: var(--mainNavLink);
+    border-radius: 3rem;
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-100%, 0) rotate(10deg);
+    transform-origin: top left;
+    transition: .2s transform ease-out;
+    will-change: transform;
+    z-index: -1;
+}
+    
+.nav-link:hover::after {
+  transform: translate(0, 0);
+}
+    
+.nav-link:hover {
+  border: 2px solid transparent;
+    color: indigo;
+    transform: scale(1.05);
+    will-change: transform;
+}
+
+.portfolio-area_item > a{
+    color: var(--siteTxt);
+    text-decoration: none;
+}
+
+.portfolio-area_item > a:hover {
+    color: var(--siteTxtHover);
+}
+
+.portfolio-area_item {
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio-area_item-description {
+    
+}
+
+/*********** Footer ***********/
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-top: 40px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.copyR {
+    display: flex;
+    justify-content: center;
+}
+
+.made-with {
+    display: flex;
+    justify-content: flex-start;
+    height: 30px;
+/*    max-width: 200px;*/
+}
+
+.leaf,
+.vapor,
+.swift {
+    background-color: gray;
+}
+
+@media screen and (min-width: 641px) {
+    .portfolio-area_item-description {
+        width: 50%;
+        padding: 50px;
+    }
+    
+    .portfolio-area_item {
+        flex-direction: row;
+    }
+    
+/*    .footer {*/
+/*        flex-direction: row;*/
+/*        justify-content: space-evenly;*/
+/*    }*/
+/*    */
+/*    .copyR {*/
+/*        display: flex;*/
+/*        justify-content: flex-start;*/
+/*    }*/
+/*    */
+/*    .made-with {*/
+/*        justify-content: flex-end;*/
+/*    }*/
+}
+

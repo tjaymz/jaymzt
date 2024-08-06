@@ -1,0 +1,17 @@
+#extend("layout"):
+    #export("header"):
+        #extend("header")
+    #endexport
+    #export("content"):
+            <h2>Front End Web Development/Prototyping/Dabbling in Swift and SwiftUI</h2>
+<!--            <h3>Made with</h3>-->
+<!--            <div class="made-with">-->
+<!--                <img src="/img/Swift_logo_horz_lockup_color_rgb.svg" class="swift" alt="Swift Logo">-->
+<!--                <img src="/img/vapor-logo.png" class="vapor" alt="Vapor Logo">-->
+<!--                <img src="/img/leaf-logo.png" class="leaf" alt="Leaf Logo">-->
+<!--            </div>-->
+    #endexport
+    #export("footer"):
+        #extend("footer")
+    #endexport
+#endextend

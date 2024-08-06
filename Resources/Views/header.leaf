@@ -1,0 +1,11 @@
+<header>
+    <nav class="navBar">
+        <ul>
+            <li><a class="nav-link" href="/">Home</a></li>
+            <li><a class="nav-link" href="/about">About</a></li>
+            <li><a class="nav-link" href="/portfolio">Portfolio</a></li>
+            <li><a class="nav-link" href="/testing">Testing</a></li>
+        </ul>
+    </nav>
+</header>
+

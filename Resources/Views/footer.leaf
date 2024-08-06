@@ -1,0 +1,13 @@
+<footer class="footer">
+    <p>&copy; 2024 James Trujillo</p>
+    
+    
+<!--    <div class="copyR">-->
+<!--        <p>&copy; 2024 James Trujillo</p>-->
+<!--    </div>-->
+<!--    <div class="made-with">-->
+<!--        <img src="/img/Swift_logo_horz_lockup_color_rgb.svg" class="swift" alt="Swift Logo">-->
+<!--        <img src="/img/vapor-logo.png" class="vapor" alt="Vapor Logo">-->
+<!--        <img src="/img/leaf-logo.png" class="leaf" alt="Leaf Logo">-->
+<!--    </div>-->
+</footer>

@@ -1,0 +1,33 @@
+#extend("layout"):
+    #export("header"):
+        #extend("header")
+    #endexport
+    #export("content"):
+        <h1>#(title)</h1>
+        <section class="portfolio-area">
+            <div class="portfolio-area_item">
+                <a target="_blank" href="https://atlas.fullsail.com">
+                    <h2>Atlas</h2>
+                    <img src="/img/Atlas-screenshot.jpg" alt="Screenshot of the Atlas website" height="200"/>
+                </a>
+                <div class="portfolio-area_item-description">
+                    <p>Atlas is an internal content management web application developed to help the teachers, course and program directors, and many more staff at Full Sail University to keep topics, materials, lessons, activities, learning outcomes, organized. Atlas can also generate lesson plans based on that data.</p>
+                    <p>Atlas was built using Angular, CodeIgniter, PHP, MySQL, Angular Material Design, Bootstrap, and FontAwesome</p>
+                </div>
+            </div>
+            <div class="portfolio-area_item">
+                <a target="_blank" href="https://resourcefulteaching.com">
+                    <h2>Resourceful Teaching</h2>
+                    <img src="/img/resourceful-screenshot.jpg" alt="Screenshot of the Resourceful Teaching website" height="200"/>
+                </a>
+                <div class="portfolio-area_item-description">
+                    <p>Resourceful Teaching is a website created for Amy Trujillo so that she could create an online portfolio of some of here work from her Master's Degree classes, as well as her professional education work.</p>
+                </div>
+            </div>
+        </section>
+    #endexport
+    #export("footer"):
+        #extend("footer")
+    #endexport
+#endextend
+

@@ -1,0 +1,21 @@
+#extend("layout"):
+    #export("header"):
+        #extend("header")
+    #endexport
+    #export("content"):
+        <h1>#(title)</h1>
+        <section>
+            <p>This page is where some things I've experimented and tinkered with live. Some are finished projects, others more proof of concept items.</p>
+            <p>For example, this website was an experiment to test the Vapor framework, using Swift, and Leaf templating to build out web pages, on a AWS Lightsail Ubuntu 20.04 instance.</p>
+            <div class="made-with">
+                <img src="/img/Swift_logo_horz_lockup_color_rgb.svg" class="swift" alt="Swift Logo">
+                <img src="/img/vapor-logo.png" class="vapor" alt="Vapor Logo">
+                <img src="/img/leaf-logo.png" class="leaf" alt="Leaf Logo">
+            </div>
+        </section>
+    #endexport
+    #export("footer"):
+        #extend("footer")
+    #endexport
+#endextend
+
