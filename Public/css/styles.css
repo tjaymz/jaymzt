@@ -76,12 +76,12 @@ body {
     will-change: transform;
 }
 
-.portfolio-area_item > a{
+.portfolio-area_item a{
     color: var(--siteTxt);
     text-decoration: none;
 }
 
-.portfolio-area_item > a:hover {
+.portfolio-area_item a:hover {
     color: var(--siteTxtHover);
 }
 
