@@ -6,7 +6,7 @@
         <h1>#(title)</h1>
         <section class="portfolio-area">
             <div class="portfolio-area_item">
-                <a target="_blank" href="https://atlas.fullsail.com">
+                <a class="itemImg" target="_blank" href="https://atlas.fullsail.com">
                     <h2>Atlas</h2>
                     <img src="/img/Atlas-screenshot.jpg" alt="Screenshot of the Atlas website" height="200"/>
                 </a>
@@ -16,7 +16,7 @@
                 </div>
             </div>
             <div class="portfolio-area_item">
-                <a target="_blank" href="https://resourcefulteaching.com">
+                <a class="itemImg" target="_blank" href="https://resourcefulteaching.com">
                     <h2>Resourceful Teaching</h2>
                     <img src="/img/resourceful-screenshot.jpg" alt="Screenshot of the Resourceful Teaching website" height="200"/>
                 </a>
@@ -26,26 +26,27 @@
                 </div>
             </div>
             <div class="portfolio-area_item">
-                <a target="_blank" href="#">
+                <div class="itemImg">
                     <h2>ParkFun</h2>
-                    <img src="/img/resourceful-screenshot.jpg" alt="Screenshot of the Resourceful Teaching website" height="200"/>
-                </a>
+                    <img src="/img/parkfun1.PNG" alt="Screenshot of the ParkFun App" height="200"/>
+                    <img src="/img/parkfun2.PNG" alt="Screenshot of the ParkFun App" height="200"/>
+                </div>
                 <div class="portfolio-area_item-description">
-                    <p></p>
+                    <p>I created the Parks app to practice and learn Swift and Swift UI. Creating my own app that can pull from an API to display information about the local Disney parks has been  a thought of mine for quite a while, and this will be an ongoing project that will eventually lead to an Apple TV app, and possibly an iOS widget.</p>
                     <p>Tools used in the Park App - Xcode, Swift, Swift UI, <a target="_blank" href="https://api.themeparks.wiki/docs/v1/">Theme Park Wik V1 API</a></p>
                 </div>
             </div>
-            <!-- <div class="portfolio-area_item">
-                <a target="_blank" href="#">
-                    <h2>R</h2>
-                    <img src="/img/resourceful-screenshot.jpg" alt="Screenshot of the Resourceful Teaching website" height="200"/>
+            <div class="portfolio-area_item">
+                <a target="_blank" href="http://jamestrujillo.com">
+                    <h2>jamestrujillo.com</h2>
+                    <img src="/img/jtwebsite.png" alt="Screenshot of the Resourceful Teaching website" height="200"/>
                 </a>
                 <div class="portfolio-area_item-description">
-                    <p></p>
-                    <p>Tools used in </p>
+                    <p>This is my own personal website portfolio page. For this page I wanted to do and use something a bit different, so I found the Vapor framework, which is a Swift based framework that can be used to build web apps, apis, and with Leaf Templating full websites. This was a bit challenging for me, but I’m always up for a little challenge, frustration, and relief when finding solutions.</p>
+                    <p>Tools used in JamesTrujillo.com - Xcode, Swift, Vapor, Leaf, AWS Lightsail, CSS, HTML, Supervisor, NginX</p>
                 </div>
             </div>
-            <div class="portfolio-area_item">
+            <!-- <div class="portfolio-area_item">
                 <a target="_blank" href="#">
                     <h2>R</h2>
                     <img src="/img/resourceful-screenshot.jpg" alt="Screenshot of the Resourceful Teaching website" height="200"/>
