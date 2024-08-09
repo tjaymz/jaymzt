@@ -1,35 +1,52 @@
+/* CSS Variables for Consistent Theming */
 :root {
-    --mainBackground: #333333;
-    --siteTxt: #EBFFFF;
-    --siteTxtHover: #ABABAB;
-    --mainNavLink: yellow;
+    --mainBackground: #333333;       /* Dark Background */
+    --secondaryBackground: #505050;  /* Slightly Lighter Background */
+    --siteTxt: #EBFFFF;              /* Primary Text Color */
+    --siteTxtHover: #ABABAB;         /* Text Hover Color */
+    --mainNavLink: #FFD700;          /* Gold for Navigation Links */
+    --hoverColor: #4B0082;           /* Indigo for Hover States */
 }
 
-
+/********** Global Styles **********/
 body {
     background-color: var(--mainBackground);
     color: var(--siteTxt);
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
     background-color: var(--mainBackground);
     position: sticky;
     top: 0;
+    z-index: 1000;
 }
 
+/********** Main Content Area **********/
 .main-content {
-    display: flex;
-    flex-direction: column;
+    flex: 1;
     max-width: 1200px;
     margin: 0 auto;
-    padding-bottom: 100px;
+    padding: 20px;
 }
 
-.itemImg {
-    width: 300px;
+h1 {
+    text-align: center;
+    margin: 40px 0;
+    font-size: 3rem;
 }
 
-/*Navigation*/
+h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/********** Navigation Bar **********/
 .navBar {
     display: flex;
     justify-content: flex-end;
@@ -42,25 +59,25 @@ header {
 
 .navBar ul li {
     display: flex;
+    margin: 0 10px;
 }
 
 .nav-link {
-  border: 2px solid currentColor;
-  border-radius: 3rem;
-  color: var(--mainNavLink);
-  font-size: 1rem;
-  font-weight: 100;
-  overflow: hidden;
-  padding: 1rem 2rem;
-  position: relative;
-  text-decoration: none;
-  transition: .2s transform ease-in-out;
-  will-change: transform;
-  z-index: 0;
+    border: 2px solid currentColor;
+    border-radius: 3rem;
+    color: var(--mainNavLink);
+    font-size: 1rem;
+    font-weight: 100;
+    overflow: hidden;
+    padding: 1rem 2rem;
+    position: relative;
+    text-decoration: none;
+    transition: 0.3s all ease-in-out;
+    z-index: 0;
 }
-  
+
 .nav-link::after {
-  background-color: var(--mainNavLink);
+    background-color: var(--mainNavLink);
     border-radius: 3rem;
     content: '';
     display: block;
@@ -71,23 +88,42 @@ header {
     top: 0;
     transform: translate(-100%, 0) rotate(10deg);
     transform-origin: top left;
-    transition: .2s transform ease-out;
-    will-change: transform;
+    transition: 0.3s transform ease-out;
     z-index: -1;
 }
-    
+
 .nav-link:hover::after {
-  transform: translate(0, 0);
-}
-    
-.nav-link:hover {
-  border: 2px solid transparent;
-    color: indigo;
-    transform: scale(1.05);
-    will-change: transform;
+    transform: translate(0, 0);
 }
 
-.portfolio-area_item a{
+.nav-link:hover {
+    border: 2px solid transparent;
+    color: var(--hoverColor);
+    transform: scale(1.05);
+}
+
+/********** Portfolio Section **********/
+.portfolio-area {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.portfolio-area_item {
+    background-color: var(--secondaryBackground);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-area_item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-area_item a {
     color: var(--siteTxt);
     text-decoration: none;
 }
@@ -96,67 +132,87 @@ header {
     color: var(--siteTxtHover);
 }
 
-.portfolio-area_item {
+.itemImg img {
+    height: 200px;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+
+.itemImg:hover img {
+    transform: scale(1.05);
+}
+
+.parksAppImg {
     display: flex;
-    flex-direction: column;
+}
+
+.modal-toggle {
+    display: none; /* Hide the checkbox */
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: var(--mainNavLink);
+    text-decoration: underline;
+    cursor: pointer;
+    position: relative;
+}
+
+.read-more::after {
+    content: "Read More";
+}
+
+.modal-toggle:checked + .read-more::after {
+    content: "Close";
 }
 
 .portfolio-area_item-description {
-    
+    opacity: 0;
+    visibility: hidden;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 1s ease-in-out, max-height 1s ease-in-out;
 }
 
-/*********** Footer ***********/
+.modal-toggle:checked ~ .portfolio-area_item-description {
+    opacity: 1;
+    visibility: visible;
+    max-height: 1000px; /* Arbitrary large value to allow the content to be fully visible */
+}
+
+
+/* Optional: Add styling for the Close link */
+.modal-close {
+    display: inline-block;
+    margin-top: 20px;
+    color: var(--mainNavLink);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/********** Footer **********/
 .footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    margin-top: 40px;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
     background-color: #292929;
+    padding: 20px;
+    text-align: center;
+    color: var(--siteTxt);
+    width: 100%;
+    margin-top: auto;
 }
 
-.copyR {
-    display: flex;
-    justify-content: center;
-}
-
-.made-with {
-    display: flex;
-    justify-content: flex-start;
-    height: 30px;
-/*    max-width: 200px;*/
-}
-
-.leaf,
-.vapor,
-.swift {
-    background-color: gray;
-}
-
-@media screen and (min-width: 641px) {
-    .portfolio-area_item-description {
-        width: 50%;
-        padding: 50px;
+/********** Responsive Design **********/
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
     }
-    
-    .portfolio-area_item {
-        flex-direction: row;
-    }
-    
-/*    .footer {*/
-/*        flex-direction: row;*/
-/*        justify-content: space-evenly;*/
-/*    }*/
-/*    */
-/*    .copyR {*/
-/*        display: flex;*/
-/*        justify-content: flex-start;*/
-/*    }*/
-/*    */
-/*    .made-with {*/
-/*        justify-content: flex-end;*/
-/*    }*/
-}
 
+    .nav-link {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}

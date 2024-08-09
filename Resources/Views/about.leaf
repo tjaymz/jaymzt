@@ -4,12 +4,10 @@
     #endexport
     #export("content"):
         <h1>#(title)</h1>
-        <p>Developed curriculum management web application using Angular to collect
-        assignments, outcomes, and materials for over 1600 courses and almost 200 programs to
-        be easily searchable, generate reports, and generate lesson plans automatically for export
-        into Word or PDF. Developed the front end work, using SCSS, CSS Grid, Flexbox, Angular,
-        and Material Design. Ensuring the application was mobile friendly. Set up a development
-        server using Ubuntu for QA testing, before pushing to our production server on AWS.</p>
+        <p>Since I was little, I’ve had a passion for technology and the innovation that comes from using it in so many different ways. My constant curiosity and desire to learn have driven me to explore various aspects of the tech world. Whether it’s coding, prototyping, or finding ways to improve existing solutions, I am a dedicated hard worker who will always get the job done.</p>
+        <p>As a web developer, I focus on creating mobile-first experiences that cater to modern user needs. I love to tinker with new technologies, libraries, and frameworks, pushing myself to deliver unique and engaging user experiences. Exploring all these possibilities keeps me excited and eager to see what’s next.</p>
+        <p>Beyond web development and coding, I have a deep love for music, and I enjoy playing any instrument I can find. I also dabble in audio and video editing, further expanding my creative horizons. Over the past few years, I’ve been drawn into the world of 3D printing, which allows me to explore new ideas and create practical items, whether it’s replacing a broken part or printing glow-in-the-dark light switch covers.</p>
+        <p>In every project I undertake—whether it’s building a website, developing an app, 3D printing, creating music, or experimenting with new technology—my goal is always to learn, create, and innovate. I’m constantly seeking opportunities to grow and evolve in the ever-changing world of technology.</p>
     #endexport
     #export("footer"):
         #extend("footer")

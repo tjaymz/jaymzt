@@ -3,7 +3,10 @@
         #extend("header")
     #endexport
     #export("content"):
-            <h2>Front End Web Development/Prototyping/Dabbling in Swift and SwiftUI</h2>
+            <h2 class="animated-text">Front End Web Development</h2>
+            <h2 class="animated-text">Prototyping</h2>
+            <h2 class="animated-text">Dabbling in Swift and SwiftUI</h2>
+            
 <!--            <h3>Made with</h3>-->
 <!--            <div class="made-with">-->
 <!--                <img src="/img/Swift_logo_horz_lockup_color_rgb.svg" class="swift" alt="Swift Logo">-->

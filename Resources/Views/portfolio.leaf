@@ -10,6 +10,8 @@
                     <h2>Atlas</h2>
                     <img src="/img/Atlas-screenshot.jpg" alt="Screenshot of the Atlas website" height="200"/>
                 </a>
+                <input type="checkbox" id="toggle-atlas" class="modal-toggle">
+                <label for="toggle-atlas" class="read-more"></label>
                 <div class="portfolio-area_item-description">
                     <p>Atlas is Full Sail University’s proprietary curriculum management online platform that allows educators to create, share, explore, and plan their curriculum. Atlas provides a centralized space where our educators can view detailed curriculum information on every course in every degree program throughout the university. This information includes course learning outcomes, course descriptions, individual learning activities, course topics, course materials, course lesson plans, program outcomes, career information, and course sequence.</p>
                     <p>Tools used in Atlas - HTML, CSS, Angular, Angular Material, SCSS, IntelliJ IDEA, Codeigniter, PHP, FontAwesome, Bootstrap, 	Material Design</p>
@@ -20,6 +22,8 @@
                     <h2>Resourceful Teaching</h2>
                     <img src="/img/resourceful-screenshot.jpg" alt="Screenshot of the Resourceful Teaching website" height="200"/>
                 </a>
+                <input type="checkbox" id="toggle-resourceful" class="modal-toggle">
+                <label for="toggle-resourceful" class="read-more"></label>
                 <div class="portfolio-area_item-description">
                     <p>Resourceful Teaching is a website created for Amy Trujillo so that she could create an online portfolio of some of here work from her Master's Degree classes, as well as her professional education work.</p>
                     <p>Tools used in Resourceful Teaching - Javascript, CSS, HTML</p>
@@ -28,19 +32,25 @@
             <div class="portfolio-area_item">
                 <div class="itemImg">
                     <h2>ParkFun</h2>
-                    <img src="/img/parkfun1.PNG" alt="Screenshot of the ParkFun App" height="200"/>
-                    <img src="/img/parkfun2.PNG" alt="Screenshot of the ParkFun App" height="200"/>
+                    <div class="parksAppImg">
+                        <img src="/img/parkfun1.PNG" alt="Screenshot of the ParkFun App" height="200"/>
+                        <img src="/img/parkfun2.PNG" alt="Screenshot of the ParkFun App" height="200"/>
+                    </div>
                 </div>
+                <input type="checkbox" id="toggle-parks" class="modal-toggle">
+                <label for="toggle-parks" class="read-more"></label>
                 <div class="portfolio-area_item-description">
                     <p>I created the Parks app to practice and learn Swift and Swift UI. Creating my own app that can pull from an API to display information about the local Disney parks has been  a thought of mine for quite a while, and this will be an ongoing project that will eventually lead to an Apple TV app, and possibly an iOS widget.</p>
                     <p>Tools used in the Park App - Xcode, Swift, Swift UI, <a target="_blank" href="https://api.themeparks.wiki/docs/v1/">Theme Park Wik V1 API</a></p>
                 </div>
             </div>
             <div class="portfolio-area_item">
-                <a target="_blank" href="http://jamestrujillo.com">
+                <a class="itemImg" target="_blank" href="http://jamestrujillo.com">
                     <h2>jamestrujillo.com</h2>
                     <img src="/img/jtwebsite.png" alt="Screenshot of the Resourceful Teaching website" height="200"/>
                 </a>
+                <input type="checkbox" id="toggle-jaymzt" class="modal-toggle">
+                <label for="toggle-jaymzt" class="read-more"></label>
                 <div class="portfolio-area_item-description">
                     <p>This is my own personal website portfolio page. For this page I wanted to do and use something a bit different, so I found the Vapor framework, which is a Swift based framework that can be used to build web apps, apis, and with Leaf Templating full websites. This was a bit challenging for me, but I’m always up for a little challenge, frustration, and relief when finding solutions.</p>
                     <p>Tools used in JamesTrujillo.com - Xcode, Swift, Vapor, Leaf, AWS Lightsail, CSS, HTML, Supervisor, NginX</p>
