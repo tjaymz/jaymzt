@@ -4,15 +4,14 @@
     #endexport
     #export("content"):
         <h1>#(title)</h1>
-        <section>
-            <p>This page is where some things I've experimented and tinkered with live. Some are finished projects, others more proof of concept items.</p>
-            <p>For example, this website was an experiment to test the Vapor framework, using Swift, and Leaf templating to build out web pages, on a AWS Lightsail Ubuntu 20.04 instance.</p>
-            <div class="made-with">
-                <img src="/img/Swift_logo_horz_lockup_color_rgb.svg" class="swift" alt="Swift Logo">
-                <img src="/img/vapor-logo.png" class="vapor" alt="Vapor Logo">
-                <img src="/img/leaf-logo.png" class="leaf" alt="Leaf Logo">
-            </div>
-        </section>
+        <div id="button-container">
+            <button class="parkBtn" data-park-id="75ea578a-adc8-4116-a54d-dccb60765ef9">Magic Kingdom</button>
+            <button class="parkBtn" data-park-id="47f90d2c-e191-4239-a466-5892ef59a88b">Epcot</button>
+            <button class="parkBtn" data-park-id="288747d1-8b4f-4a64-867e-ea7c9b27bad8">Disney's Hollywood Studios</button>
+            <button class="parkBtn" data-park-id="1c84a229-8862-4648-9c71-378ddd2c7693">Disney's Animal Kingdom Theme Park</button>
+            <button class="parkBtn" data-park-id="b070cbc5-feaa-4b87-a8c1-f94cca037a18">Disney's Typhoon Lagoon Water Park</button>
+            <button class="parkBtn" data-park-id="ead53ea5-22e5-4095-9a83-8c29300d7c63">Disney's Blizzard Beach Water Park</button>
+        </div>
     #endexport
     #export("footer"):
         #extend("footer")

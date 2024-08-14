@@ -56,17 +56,17 @@
                     <p>Tools used in JamesTrujillo.com - Xcode, Swift, Vapor, Leaf, AWS Lightsail, CSS, HTML, Supervisor, NginX</p>
                 </div>
             </div>
-            <!-- <div class="portfolio-area_item">
-                <a target="_blank" href="#">
-                    <h2>R</h2>
-                    <img src="/img/resourceful-screenshot.jpg" alt="Screenshot of the Resourceful Teaching website" height="200"/>
+            <div class="portfolio-area_item">
+                <a class="itemImg" target="_blank" href="http://jaymzt.com/parksapi/">
+                    <h2>Parks API</h2>
+                    <img src="/img/parksapi.jpg" alt="Screenshot of the Parks API website"/>
                 </a>
                 <div class="portfolio-area_item-description">
-                    <p></p>
-                    <p>Tools used in </p>
+                    <p>Another personal project of mine to pull data from the same theme parks api used in the iOS app.</p>
+                    <p>Tools used in ParksAPI - HTML, CSS, Javascript</p>
                 </div>
             </div>
-            <div class="portfolio-area_item">
+            <!-- <div class="portfolio-area_item">
                 <a target="_blank" href="#">
                     <h2>R</h2>
                     <img src="/img/resourceful-screenshot.jpg" alt="Screenshot of the Resourceful Teaching website" height="200"/>

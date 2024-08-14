@@ -69,7 +69,7 @@ h2 {
     font-size: 1rem;
     font-weight: 100;
     overflow: hidden;
-    padding: 1rem 2rem;
+    padding: 0.5rem 1.5rem;
     position: relative;
     text-decoration: none;
     transition: 0.3s all ease-in-out;
@@ -140,10 +140,9 @@ h2 {
     transition: transform 0.3s ease;
 }
 
-
-.itemImg:hover img {
-    transform: scale(1.05);
-}
+/* .itemImg img:hover {
+    transform: scale(4);
+} */
 
 .parksAppImg {
     display: flex;
@@ -194,6 +193,70 @@ h2 {
     cursor: pointer;
 }
 
+
+/********** Testing/Experimental **********/
+#button-container {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(300px, 1fr));
+	gap: 10px;
+	margin-bottom: 20px;
+}
+
+.parkBtn {
+	box-shadow: 0px 10px 14px -7px #276873;
+	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+	background-color:#599bb3;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:13px 32px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+}
+.parkBtn:hover {
+	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+	background-color:#408c99;
+}
+.parkBtn:active {
+	position:relative;
+	top:1px;
+}
+
+/* Add your styling here to make it look visually appealing */
+#data-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 20px;
+}
+
+.item {
+    border: 1px solid #ccc;
+    padding: 15px;
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.item > h3 {
+	margin-top: 0;
+	color: #333;
+}
+
+.item p {
+	margin: 5px 0;
+}
+
+.item strong {
+	font-weight: bold;
+}
+
+.error {
+	text-align: center;
+	color: red;
+}
 
 /********** Footer **********/
 .footer {
