@@ -61,9 +61,11 @@
                     <h2>Parks API</h2>
                     <img src="/img/parksapi.jpg" alt="Screenshot of the Parks API website"/>
                 </a>
+                <input type="checkbox" id="toggle-parksAPI" class="modal-toggle">
+                <label for="toggle-parksAPI" class="read-more"></label>
                 <div class="portfolio-area_item-description">
-                    <p>Another personal project of mine to pull data from the same theme parks api used in the iOS app.</p>
-                    <p>Tools used in ParksAPI - HTML, CSS, Javascript</p>
+                    <p>Parks API - On this website I am using the same api as in the ParkFun App but here it’s being utilized in a standard website using Javascript instead of Swift.</p>
+                    <p>Tools used in Parks API - HTML, CSS, Javascript, Theme Park Wik V1 API https://api.themeparks.wiki/docs/v1/</p>
                 </div>
             </div>
             <!-- <div class="portfolio-area_item">
