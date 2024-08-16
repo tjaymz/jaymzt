@@ -68,6 +68,17 @@
                     <p>Tools used in Parks API - HTML, CSS, Javascript, Theme Park Wik V1 API https://api.themeparks.wiki/docs/v1/</p>
                 </div>
             </div>
+            <div class="portfolio-area_item">
+                <a target="_blank" href="#">
+                    <h2>Sci-Fi (ambience)</h2>
+                    <iframe width="355" height="200" src="https://www.youtube.com/embed/t0ocE8RvOMs?si=7mnd6PzaIn9iK_IS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </a>
+                <input type="checkbox" id="toggle-sciFi" class="modal-toggle">
+                <label for="toggle-sciFi" class="read-more"></label>
+                <div class="portfolio-area_item-description">
+                    <p>Tools used in </p>
+                </div>
+            </div>
             <!-- <div class="portfolio-area_item">
                 <a target="_blank" href="#">
                     <h2>R</h2>
